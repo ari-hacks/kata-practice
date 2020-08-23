@@ -2,6 +2,6 @@
 
 [![Build Status](https://travis-ci.com/ari-hacks/covid-chatbot.svg?branch=master)](https://travis-ci.com/ari-hacks/kata-practice)
 
-👩🏽‍💻   CodeWars Python Katas 
+👩🏽‍💻   CodeWars Python and Go Katas 
 
 ![Codewars Rank](https://www.codewars.com/users/ari-hacks/badges/large)
