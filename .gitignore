@@ -1,7 +1,8 @@
 # Created by pytest automatically.
 .vscode/
+__pycache__/
 katas/__pycache__/
-katas/fundamentals/__pycache__/
+katas/python/kyu8/__pycache__/
 tests/.pytest_cache/
 tests/__pycache__/
 tests/test_fundamentals/__pycache__/
