@@ -1,9 +1,11 @@
   
-.PHONY: clean-pyc clean-build docs
-
 help:
 	@echo "test - run tests"
 
-test:
-	cd tests 
+python-test:
+	cd tests/python_test
 	pytest
+
+go-test:
+	cd tests/go_test
+	go test
