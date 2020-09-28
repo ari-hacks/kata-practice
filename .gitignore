@@ -6,3 +6,4 @@ katas/python/kyu8/__pycache__/
 tests/.pytest_cache/
 tests/__pycache__/
 tests/test_fundamentals/__pycache__/
+.DS_Store
