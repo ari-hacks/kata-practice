@@ -1,11 +1,19 @@
-  
+GOCMD=go  
+GOBUILD=$(GOCMD) build
+GOCLEAN=$(GOCMD) clean
+GOTEST=$(GOCMD) test
+GOGET=$(GOCMD) get
+PYTHONTEST= pytest
+
+
+
 help:
 	@echo "test - run tests"
 
 python-test:
 	cd tests/python_test
-	pytest
+	$(PYTHONTEST)
 
 go-test:
-	cd tests/go_test
-	go test
+	cd katas/go/kyu$(n)
+	$(GOTEST) -v ./...
