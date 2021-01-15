@@ -5,15 +5,12 @@ import (
 	"strings"
 )
 
+//make cleaner
 func CreatePhoneNumber(numbers [10]uint) string {
-	// return "(123) 456-7890"
-	// for _, number := range numbers {
-	if len(numbers) == 10 {
-		area_code := numbers[0:3]
-		//   exchange_code = ''.join(str(x) for x in n[3:6])
-		//   number = ''.join(str(x) for x in n[6:10])
-		fmt.Println(area_code)
-		return area_code
-	}
+	area_code := strings.Trim(strings.Join(strings.Split(fmt.Sprint(numbers[0:3]), " "), ""), "[]")
+	exchange_number := strings.Trim(strings.Join(strings.Split(fmt.Sprint(numbers[3:6]), " "), ""), "[]")
+	phone_numb := strings.Trim(strings.Join(strings.Split(fmt.Sprint(numbers[6:]), " "), ""), "[]")
+
+	return fmt.Sprintf("(%s) %s-%s", area_code, exchange_number, phone_numb)
 
 }
